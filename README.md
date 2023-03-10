@@ -51,7 +51,7 @@ Results are written to the folder at `/path/to/output/`, and processed datasets 
 
 ### How to Evaluate a Custom Graph Inference Function?
 
-To run a custom graph inference function, set `--model_name="custom"` and `--inference_function_file_path` to the file path that contains your custom graph inference function (e.g. [grnboost.py](src/grnboost.py) in this repo). You are given two starter implementations to choose from in src/, grnboost.py and dcdi.py. Your mission is to choose one of them and fine tune them to improve their performance. Hints on potential ways to improve the methods can be found directly in the code. 
+To run a custom graph inference function, set `--model_name="custom"` and `--inference_function_file_path` to the file path that contains your custom graph inference function (e.g. [grnboost.py](../causalbench-starter-main%205/src/grnboost.py) in this repo). You are given two starter implementations to choose from in src/, grnboost.py and dcdi.py. Your mission is to choose one of them and fine tune them to improve their performance. Hints on potential ways to improve the methods can be found directly in the code. 
 
 You should evaluate your method with the following command:
 
@@ -84,6 +84,9 @@ For submission, you will need the eval.ai-CLI tool, which can be installed with 
   - [EvalAI-CLI Documentation](https://cli.eval.ai/)
   - Run `$ pip install evalai`
 
+You will also need Docker, as submissions must be submitted as container images. We have provided an adequate default Dockerfile for your convenience.
+  - [Docker Installation Instructions](https://docs.docker.com/desktop/)
+
 Please note that all your submitted code must either be loaded via a dependency in `requirements.txt` or be present in the `src/` directory in this starter repository for the submission to succeed.
 
 
@@ -92,10 +95,13 @@ Please note that all your submitted code must either be loaded via a dependency 
 - Navigate to the directory to which you have cloned this repo to.
   - `$ cd /path/to/causalbench-starter`
 - Ensure you have ONE graph inference function (inheriting from `AbstractInferenceModel`) in [main.py](src/main.py). For example copy your final method to main.py `$ cp src/grnboost.py src/main.py`.
-  - _This is your pre-defined program entry point._ 
+  - _This is your pre-defined program entry point._
+- Build your container image with the provided Dockerfile
+  - `$ docker build -t submission:latest .`
+  - `$ IMAGE = "submission:latest"` 
 - Use the EvalAI-CLI command to submit your image
   - Run the following command to submit your container image:
-    - `$ evalai push $IMAGE --phase gsk-causalbench-test-1528`
+    - `$ evalai push $IMAGE --phase gsk-causalbench-test-1981`
     - **Please note** that you have a maximum number of submissions that any submission will be counted against.
     - **Please note** that you will not receive your final private leaderboard score until the challenge period is over.
 
