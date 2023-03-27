@@ -1,1 +1,1 @@
-causalbench==1.0.0
+causalbench==1.0.1
