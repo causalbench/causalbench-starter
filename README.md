@@ -119,6 +119,9 @@ That’s it! Our pipeline will take your image and test your function. If your m
 
 If you have any questions or concerns, please reach out to us at [rd.causalbench-challenge@gsk.com](mailto:rd.causalbench-challenge@gsk.com?subject=[CausalBench-Support-Request])
 
+## Report template
+
+A template for your report is provided [here](report-template/Causalbench_challenge_template.zip).
 
 ### Frequently Asked Questions (FAQ)
 
