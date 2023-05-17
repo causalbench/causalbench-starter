@@ -123,6 +123,17 @@ If you have any questions or concerns, please reach out to us at [rd.causalbench
 
 A template for your report is provided [here](report-template/Causalbench_challenge_template.zip).
 
+## Citation
+
+Please consider citing, if you reference or use our methodology, code or results in your work:
+
+    @article{chevalley2022causalbench,
+        title={{CausalBench: A Large-scale Benchmark for Network Inference from Single-cell Perturbation Data}},
+        author={Chevalley, Mathieu and Roohani, Yusuf and Mehrjou, Arash and Leskovec, Jure and Schwab, Patrick},
+        journal={arXiv preprint arXiv:2210.17283},
+        year={2022}
+    }
+    
 ### Frequently Asked Questions (FAQ)
 
 #### _"Will there be a public challenge leaderboard?"_
@@ -146,18 +157,6 @@ We will use the last submission to calculate the team's score to avoid conferrin
 
 The idea is for participants to develop and evaluate their own solutions internally against the many existing baselines already implemented in [CausalBench](https://github.com/causalbench/causalbench) - hence there is no public leaderboard.
 There will be a final private leaderboard that we will score through the eval.ai submission system.
-
-
-## Citation
-
-Please consider citing, if you reference or use our methodology, code or results in your work:
-
-    @article{chevalley2022causalbench,
-        title={{CausalBench: A Large-scale Benchmark for Network Inference from Single-cell Perturbation Data}},
-        author={Chevalley, Mathieu and Roohani, Yusuf and Mehrjou, Arash and Leskovec, Jure and Schwab, Patrick},
-        journal={arXiv preprint arXiv:2210.17283},
-        year={2022}
-    }
 
 
 ### License
